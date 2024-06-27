@@ -1,4 +1,4 @@
-# Support my work
+## Support my work
 
 You can support my work financially in the following ways:
 
