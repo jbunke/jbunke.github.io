@@ -1,0 +1,16 @@
+<div class="content">
+    <h1>{{ page.title }}</h1>
+    <p class="description">{{ page.description }}</p>
+    <a class="social-icon" href="{{ page.link }}" target="_blank">
+        {% case page.link_icon %}
+            {% when "github" %}
+                <img class="unhovered" src="{{ site.baseurl }}/assets/img/social-icons/github-uh.png">
+                <img class="hovered" src="{{ site.baseurl }}/assets/img/social-icons/github-h.png">
+            {% else %}
+                <img class="unhovered" src="{{ site.baseurl }}/assets/img/social-icons/link-uh.png">
+                <img class="hovered" src="{{ site.baseurl }}/assets/img/social-icons/link-h.png">
+        {% endcase %}
+    </a>
+    
+    {{ content }}
+</div>

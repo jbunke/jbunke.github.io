@@ -1,0 +1,27 @@
+---
+title: Jordan Bunke - Projects
+---
+<!-- TODO -->
+<h1>Projects</h1>
+
+<ul>
+    {% for project in site.projects %}
+        <li class="project-blurb">
+            <div class="top-line">
+                <a href="{{ project.url }}">{{ project.title }}</a>
+
+                {% assign shortened = project.status | remove: " " %}
+                {% assign ey = "" %}
+                {% case project.status %}
+                    {% when "In development", "Maintained" %}
+                        {% assign ey = "present" %}
+                    {% else %}
+                        {% assign ey = project.end-year %}
+                {% endcase %}
+
+                <div class="status" id="{{ shortened | downcase }}">{{ project.status }} ({{ project.start-year }} - {{ ey }})</div>
+            </div>
+            <p class="blurb_description">{{ project.description }}</p>
+        </li>
+    {% endfor %}
+</ul>
