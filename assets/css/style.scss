@@ -26,6 +26,8 @@ body {
 
 nav.header {
     // font-family: TODO;
+    display: flex;
+    flex-direction: row;
 
     a {
         text-decoration: none;
@@ -37,10 +39,6 @@ nav.header {
         }
     }
 
-    .section {
-        display: inline-block;
-    }
-
     .home {
         font-size: 120%;
     }
@@ -50,10 +48,16 @@ nav.header {
     }
 
     .site-nav {
-        float: right;
+        margin-left: auto;
 
-        a {
-            padding-left: 10px;
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin-left: auto;
+                padding-bottom: 5px;
+            }
         }
 
         .location {
@@ -159,6 +163,20 @@ h1 {
 
 // if desktop
 @media only screen and (min-width: $desktop-min-w) {
+    nav.header {
+        .site-nav {
+            ul {
+                flex-direction: row;
+
+                li {
+                    padding-left: 10px;
+                }
+            }
+
+            margin-left: auto;
+        }
+    }
+    
     .project-blurb {
         .top-line {
             flex-direction: row;
