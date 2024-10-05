@@ -101,25 +101,6 @@ ul {
 
     .status {
         margin-left: auto;
-
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    #indevelopment {
-        color: $indev;
-    }
-
-    #maintained {
-        color: $maintained;
-    }
-
-    #released {
-        color: $released;
-    }
-
-    #inactive {
-        color: $inactive;
     }
 
     a {
@@ -137,4 +118,33 @@ ul {
         margin-bottom: 0px;
         margin-top: 8px;
     }
+}
+
+h1 {
+    margin-bottom: 14px;
+}
+
+.description {
+    margin-top: 0px;
+}
+
+.status {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#indevelopment {
+    color: $indev;
+}
+
+#maintained {
+    color: $maintained;
+}
+
+#released {
+    color: $released;
+}
+
+#inactive {
+    color: $inactive;
 }
