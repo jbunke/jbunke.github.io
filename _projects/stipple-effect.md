@@ -1,8 +1,8 @@
 ---
 title: Stipple Effect
 description: "A pixel art editor that supports animation and scripting"
-link: "/se"
-link_icon: link
+web-link: "/se"
+gh-link: "https://github.com/jbunke/stipple-effect"
 status: "Maintained"
 start-year: 2023
 end-year: 2024

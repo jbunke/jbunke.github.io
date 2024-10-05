@@ -4,18 +4,22 @@
 
         {% assign title = "Website" %}
         {% assign icon-core = "link" %}
-        {% if page.link_icon == "github" %}
+        {% if page.web-link != nil %}
+            <a class="social-icon" href="{{ page.web-link }}" target="_blank" title="Website">
+                <img class="unhovered" src="{{ site.baseurl }}/assets/img/social-icons/link-uh.png">
+                <img class="hovered" src="{{ site.baseurl }}/assets/img/social-icons/link-h.png">
+            </a>
+        {% endif %}
+
+        {% if page.gh-link != nil %}
             {% capture github-title %}
                 {{ page.title }} on GitHub
             {% endcapture %}
-            {% assign title = github-title %}
-            {% assign icon-core = "github" %}
+            <a class="social-icon" href="{{ page.gh-link }}" target="_blank" title="{{ github-title }}">
+                <img class="unhovered" src="{{ site.baseurl }}/assets/img/social-icons/github-uh.png">
+                <img class="hovered" src="{{ site.baseurl }}/assets/img/social-icons/github-h.png">
+            </a>
         {% endif %}
-
-        <a class="social-icon" href="{{ page.link }}" target="_blank" title="{{ title }}">
-            <img class="unhovered" src="{{ site.baseurl }}/assets/img/social-icons/{{ icon-core }}-uh.png">
-            <img class="hovered" src="{{ site.baseurl }}/assets/img/social-icons/{{ icon-core }}-h.png">
-        </a>
     </h1>
     <p class="description">{{ page.description }}</p>
 
