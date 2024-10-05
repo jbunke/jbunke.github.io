@@ -6,6 +6,7 @@ gh-link: "https://github.com/jbunke/stipple-effect"
 status: "Maintained"
 start-year: 2023
 end-year: 2024
+index: 0
 ---
 
 <!-- TODO -->

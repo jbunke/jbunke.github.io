@@ -5,7 +5,8 @@ title: Jordan Bunke - Projects
 <h1>Projects</h1>
 
 <ul>
-    {% for project in site.projects %}
+    {% assign sorted-projects = site.projects | sort: 'index' %}
+    {% for project in sorted-projects %}
         <li class="project-blurb">
             <div class="top-line">
                 <a href="{{ project.url }}">{{ project.title }}</a>

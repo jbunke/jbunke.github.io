@@ -3,7 +3,8 @@
 ---
 @import "colors";
 
-$content-width: 800px;
+$desktop-min-w: 768px;
+$content-width: min(calc(100vw - 20px), 800px);
 
 html, body {
     height: auto;
@@ -54,6 +55,10 @@ nav.header {
         a {
             padding-left: 10px;
         }
+
+        .location {
+            font-weight: bold;
+        }
     }
 }
 
@@ -97,17 +102,13 @@ ul {
     border-radius: 12px;
 
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
 
     .top-line {
         display: flex;
-        flex-direction: row;
-    }
-
-    .status {
-        margin-left: auto;
+        flex-direction: column;
     }
 
     a {
@@ -154,4 +155,17 @@ h1 {
 
 #inactive {
     color: $inactive;
+}
+
+// if desktop
+@media only screen and (min-width: $desktop-min-w) {
+    .project-blurb {
+        .top-line {
+            flex-direction: row;
+        }
+
+        .status {
+            margin-left: auto;
+        }
+    }
 }
