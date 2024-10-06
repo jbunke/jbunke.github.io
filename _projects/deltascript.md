@@ -9,3 +9,17 @@ index: 1
 ---
 
 <!-- TODO -->
+Example code:
+
+```js
+(string s -> string) {
+    string rev = "";
+
+    for (c in s)
+        rev = c + rev;
+
+    return rev;
+}
+```
+
+And much more...

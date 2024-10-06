@@ -2,4 +2,8 @@
 title: Jordan Bunke - About
 ---
 
-Nothing to see here either I'm afraid!
+<!-- TODO -->
+
+<img src="{{ site.baseurl }}/assets/img/portrait.png" alt="Portrait" class="portrait">
+
+Here

@@ -1,0 +1,80 @@
+---
+---
+@import "colors";
+@import "fonts";
+
+.language-js > div {
+    background-color: $code-bg;
+    border: 1px dashed $scope-punc;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    pre {
+        margin: 0px;
+        overflow: auto;
+
+        code {
+            color: $code-text;
+            font-family: $code-font;
+            font-size: 90%;
+            font-variant-ligatures: none;
+    
+            /* comment */
+            .c1 {
+                color: rgb(53, 153, 53);
+            }
+    
+            /* string literal */
+            .dl, .s1, .s2 {
+                color: rgb(226, 81, 81);
+            }
+    
+            /* escape character */
+            .se {
+                color: rgb(218, 124, 37);
+            }
+    
+            /* scope punctuation */
+            .p {
+                color: $scope-punc;
+            }
+    
+            /* semantic punctuation */
+            .o {
+                color: #a463d6;
+            }
+    
+            /* num literal */
+            .mi {
+                color: #b5ce89;
+            }
+    
+            /* keywords and other literals */
+            .k, .kc {
+                color: #447ed6;
+            }
+
+            // type
+            .ds-type {
+                color: #1bf5f5;
+            }
+
+            // function
+            .ds-function {
+                color: #d19b27;
+            }
+
+            .ds-property {
+                color: #a49dcf;
+            }
+
+            // namespace
+            .namespace {
+                font-style: italic;
+            }
+        }
+    }
+}
+
