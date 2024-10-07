@@ -3,6 +3,10 @@ title: Jordan Bunke - Projects
 ---
 <h1>Projects</h1>
 
+<p class="description">A selection of projects I have worked on that highlight my skills and experience across several disciplines</p>
+
+<hr>
+
 <ul class="uf-list">
     {% assign sorted-projects = site.projects | sort: 'index' %}
     {% for project in sorted-projects %}
@@ -19,7 +23,13 @@ title: Jordan Bunke - Projects
                         {% assign ey = project.end-year %}
                 {% endcase %}
 
-                <div class="status" id="{{ shortened | downcase }}">{{ project.status }} ({{ project.start-year }} - {{ ey }})</div>
+                <div class="status" id="{{ shortened | downcase }}">
+                    {% if project.start-year == ey %}
+                        {{ project.status }} ({{ ey }})
+                    {% else %}
+                        {{ project.status }} ({{ project.start-year }} - {{ ey }})
+                    {% endif %}
+                </div>
             </div>
             <p class="blurb_description">{{ project.description }}</p>
         </li>

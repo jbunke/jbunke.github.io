@@ -9,15 +9,13 @@ end-year: 2024
 index: 0
 ---
 
-<!-- TODO -->
-*Stipple Effect* is a pixel art editor that supports animation and scripting. It is designed to facilitate a variety of workflows and to encourage rapid, iterative creation of video game art assets and other types of artwork.
+![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
+
+*Stipple Effect* is designed to facilitate a variety of workflows and to encourage rapid, iterative creation of video game art assets and other types of artwork.
 
 * made by a solo game developer with the needs and skill sets of other indie devs in mind
 * lightweight and simple to learn and use, yet allows for considerable depth and complexity
 * expressive scripting API that can be used to automate program actions and create dynamic preview and color transformations with complex logic
-
-![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
-<div align="center">A preview script in action</div>
 
 ## Features
 * Symbiotic relationship between layers and frames
@@ -45,3 +43,20 @@ index: 0
     * Easily enable/disable and modify the size of the pixel grid cells
     * The box select tool can snap to the grid
 * And much more!
+
+## Development
+* Here
+
+## Technologies
+#### Java
+The source code for *Stipple Effect* is written in Java 17.
+
+#### [Delta Time](/projects/delta-time)
+*Stipple Effect* is built on top of my *Delta Time* library. *Delta Time* handles actions such as the program execution loop, text rendering, and UI element logic.
+
+#### [DeltaScript](/projects/deltascript)
+*Stipple Effect* uses its own domain-specific language for scripting. This language is an extension dialect of *DeltaScript*.
+
+## More information
+* [Website](/se)
+* [Source code](https://github.com/jbunke/stipple-effect)

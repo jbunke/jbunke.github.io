@@ -25,6 +25,8 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+  experience:
+    output: false
   posts:
     permalink: /blog/:title
 

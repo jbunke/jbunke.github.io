@@ -91,6 +91,15 @@ nav.header {
     }
 }
 
+a {
+    text-decoration: none;
+    color: $link-text-2;
+
+    &:hover {
+        color: $link-text-hover-2;
+    }
+}
+
 .uf-list {
     list-style: none;
     padding: 0;
@@ -180,18 +189,44 @@ p img {
 }
 
 .portrait {
-    width: 60%;
+    width: min(60%, 200px);
     border-radius: 50%;
     margin: auto;
     display: block;
+
+    border: 1px solid $accent;
 }
 
 h1 {
     margin-bottom: 14px;
+    text-align: center;
+}
+
+h1.post-heading {
+    text-align: left;
+}
+
+h1.project-heading {
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.project-links {
+    width: fit-content;
+    margin: auto;
 }
 
 .description {
     margin-top: 0px;
+    text-align: center;
+    text-wrap: balance;
 }
 
 .status {
@@ -213,6 +248,10 @@ h1 {
 
 #inactive {
     color: $inactive;
+}
+
+#coursework {
+    color: $coursework;
 }
 
 // if desktop
