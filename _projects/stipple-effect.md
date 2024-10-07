@@ -11,6 +11,8 @@ index: 0
 
 ![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
 
+<!-- TODO - rewrite -->
+
 *Stipple Effect* is designed to facilitate a variety of workflows and to encourage rapid, iterative creation of video game art assets and other types of artwork.
 
 * made by a solo game developer with the needs and skill sets of other indie devs in mind

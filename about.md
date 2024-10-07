@@ -6,6 +6,8 @@ title: Jordan Bunke - About
 <img src="{{ site.baseurl }}/assets/img/portrait.png" alt="Portrait" class="portrait">
 
 <!-- TODO -->
+### Hello!
+
 Here
 
 ## Experience
@@ -20,7 +22,9 @@ Here
 ## Skills
 
 #### Technical
-* Here
+* Functional programming
+* Front-end web development
+* Photoshop
 
 #### Languages
 * **Native**: English, German
@@ -42,4 +46,4 @@ Here
 
 ---
 
-A comprehensive CV/resume can be produced upon request
+A comprehensive CV/resume can be provided upon request

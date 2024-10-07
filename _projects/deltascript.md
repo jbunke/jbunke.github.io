@@ -8,7 +8,6 @@ end-year: 2024
 index: 1
 ---
 
-<!-- TODO -->
 ## Example script
 ```js
 // accepts an input color as a parameter
