@@ -92,12 +92,8 @@ nav.header {
 }
 
 a {
-    text-decoration: none;
-    color: $link-text-2;
-
-    &:hover {
-        color: $link-text-hover-2;
-    }
+    text-decoration: underline;
+    color: $link-text-1;
 }
 
 .uf-list {
@@ -107,6 +103,19 @@ a {
 
     li {
         float: left;
+    }
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+
+    .duration {
+        font-style: italic;
+    }
+
+    p {
+        margin: 0;
     }
 }
 
@@ -277,6 +286,16 @@ h4 {
 
         .status {
             margin-left: auto;
+        }
+    }
+
+    .position {
+        flex-direction: row;
+
+        .duration {
+            margin-left: auto;
+            flex-shrink: 0;
+            padding-left: 10px;
         }
     }
 }

@@ -1,0 +1,22 @@
+<div class="experience">
+    {% assign experience = site.experience | sort: 'start-date' | reverse %}
+    {% for job in experience %}
+        <div class="job">
+            <div class="job-details">
+                <h4>{{ job.organization }}</h4>
+                <div class="position">
+                    <div class="job-title">{{ job.job-title }}</div>
+                    <div class="duration">
+                        {% if job.current %}
+                            {{ job.start-date | date: "%b %Y" }} - present
+                        {% else %}
+                            {{ job.start-date | date: "%b %Y" }} - {{ job.end-date | date: "%b %Y" }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <!-- TODO -->
+            {{ job.content | markdownify }}
+        </div>
+    {% endfor %}
+</div>
