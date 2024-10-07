@@ -11,13 +11,12 @@ Here
 
 ## Experience
 
-{% assign experience = site.experience | sort: 'index' %}
-{% for job in experience %}
-    <div>{{ job.organization }}</div>
-    {{ job.content }}
-{% endfor %}
+{% include experience.md %}
 
 ## Skills
+
+#### Technical
+* Here
 
 #### Languages
 * **Native**: English, German
@@ -25,6 +24,15 @@ Here
 * **Conversational**: Spanish
 
 ## Technologies
+
+#### Programming languages
+* **Expert**: Java
+* **Proficient**: C#
+* **Competent**: JavaScript, CSS, HTML5
+* **Prior experience**: C, C++, Haskell, Python
+
+#### DevOps
+* Git, GitHub
 
 <hr>
 
