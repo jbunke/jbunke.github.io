@@ -9,45 +9,87 @@ end-year: 2024
 index: 0
 ---
 
+![Onion skinning](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/onion-skin.gif)
+
+*Stipple Effect* is a pixel art editor that has the potential to revolutionize 2D indie game development with its approach to scripting. It has all the standard features of a raster graphics editor, along with a host of features specifically intended to facilitate the creation of pixel art for video games or online distribution.
+
+Such features include:
+* [**Split/stitch**](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/split-stitch.gif): Stitch an animation into a sprite sheet or split a static project into an animation with as little as a single click or keystroke
+* [**Pixel grid**](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/pixel-grid.gif): Easily customize the size of pixel grid cells. The box select tool selection area can be snapped to the grid.
+* [**Onion skinning**](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/onion-skin.gif)
+* [**Easy and intuitive outlining system**](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/outline.gif)
+* **Palettes**
+  * Import and export palettes
+  * [Populate a palette with colors from the project canvas](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/extract-colors.gif)
+  * [**Palettization**](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/palettization.gif): Map project canvas colors to their nearest equivalent palette color
+* **Export file types**
+  * PNG sprite sheet
+  * Separate PNGs per frame
+  * Animated GIFs
+  * MP4 video
+* And much more...
+
+## Scripting
+
+*Stipple Effect* really shines when users harness the power of the scripting system.
+
+In *Stipple Effect*, there are three main applications for scripting:
+* Automation
+* Previews
+* Color transformations
+
+#### Automation
+
+Users can write and run automation scripts to automatically execute a series of program instructions.
+
+For example, imagine there are 20 projects open in *Stipple Effect*. For each of these projects, the user wants to add a static black background layer. Instead of manually (1) adding a lowest layer to each project, (2) linking its cels, and (3) filling it with the color black, the user can write and run the following automation script once:
+
+```js
+() {
+    for (p in $SE.get_projects()) {
+        p.set_layer_index(0);
+        p.add_layer();
+        p.move_layer_down();
+
+        ~ layer l = p.get_layer();
+        l.link_cels();
+        l.set_cel(0, black_bg(p));
+    }
+}
+
+black_bg(project p -> image) {
+    ~ int w = p.get_width();
+    ~ int h = p.get_height();
+
+    ~ image bg = new_image_of(w, h);
+    bg.fill(#000000, 0, 0, w, h);
+    return bg;
+}
+```
+
+[*Read more about automation scripts*](/se/docs/automation-scripts)
+
+#### Previews
+
+*Stipple Effect* has a preview window, where the contents of the project can previewed alongside the primary workspace.
+
+This can be used in various ways, including:
+* when editing pixels at a high zoom level, users can display the project zoomed out in the preview window to see how individual pixel changes affect the project as a whole
+* when editing a particular animation frame, users can play the animation in the preview window to ensure that the animation still looks smooth
+
+On top of that, users can write preview scripts to override the content displayed by the preview window. A preview script takes the flattened project contents as input and returns an image or an array of images as output. Users can define the transformation from input to output however they want, or even ignore the input entirely and generate preview output independently.
+
 ![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
 
-<!-- TODO - rewrite -->
+For example, the this GIF showcases a preview script that takes its input from `player-head-textures` and uses the intermediate textures `head` and `head` (projects 2 and 3) to define a lookup texture relationship. The pixels in `player-head-textures` are then mapped onto a spinning head animation sprite sheet and sliced into separate frames for each direction. This array is then returned as the output and shown in the preview window.
 
-*Stipple Effect* is designed to facilitate a variety of workflows and to encourage rapid, iterative creation of video game art assets and other types of artwork.
-
-* made by a solo game developer with the needs and skill sets of other indie devs in mind
-* lightweight and simple to learn and use, yet allows for considerable depth and complexity
-* expressive scripting API that can be used to automate program actions and create dynamic preview and color transformations with complex logic
-
-## Features
-* Symbiotic relationship between layers and frames
-    * [Linked and unlinked layers](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/linked-layers.gif)
-* [Two-color system: Stipple Effect's brush, pencil, and gradient tool allow for interesting combinations of the primary and secondary colors](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/combination-modes.gif)
-    * Dither mode
-    * Blend mode
-    * Noise mode
-* State management
-    * [Granular undo and redo](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/granular-undo-redo.gif)
-* Animation playback
-    * [Onion skinning](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/onion-skin.gif)
-    * Edit during playback
-* [Split/stitch](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/split-stitch.gif)
-    * Split a project into frames
-    * Stitch frames together into a sprite sheet
-* Palettes
-    * Import and export palettes
-    * [Palettization](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/palettization.gif)
-    * [Extract colors in a project to a palette](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/extract-colors.gif)
-* Selection
-    * [Family of selection tools designed for pixel-perfect selection](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/selection-tools.gif)
-    * [Intuitive and powerful outlining utilities](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/outline.gif)
-* [Pixel grid](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/pixel-grid.gif)
-    * Easily enable/disable and modify the size of the pixel grid cells
-    * The box select tool can snap to the grid
-* And much more!
+[*Read more about preview scripts*](/se/docs/preview-scripts)
 
 ## Development
-* Here
+* Designed and implemented a desktop GUI application
+* Designed and implemented [a scripting language](/projects/deltascript)
+* Released and marketed *Stipple Effect* with no budget; currently has thousands of downloads and over 500 stars on GitHub
+* Wrote comprehensive [documentation](/se/docs) for *Stipple Effect* and its [scripting API](/se/api)
 
 ## Technologies
 #### Java

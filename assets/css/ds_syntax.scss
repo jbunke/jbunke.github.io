@@ -3,6 +3,18 @@
 @import "colors";
 @import "fonts";
 
+p code {
+    font-family: $code-font;
+    font-size: 90%;
+
+    background: $code-bg;
+    color: $code-text;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 6px;
+}
+
 .language-js > div {
     background-color: $code-bg;
     border: 1px dashed $scope-punc;
@@ -22,7 +34,7 @@
             font-variant-ligatures: none;
     
             /* comment */
-            .c1 {
+            .c1, .cm {
                 color: rgb(53, 153, 53);
             }
     
