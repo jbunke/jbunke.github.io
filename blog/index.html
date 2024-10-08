@@ -1,0 +1,24 @@
+---
+title: Jordan Bunke - Blog
+---
+<h1>Blog</h1>
+
+<p>
+    <p class="description">An assorted collection of my writing about a variety of topics, including but not limited to <a href="./tags#software">software</a>, <a href="./tags#current-affairs">current affairs</a>, <a href="./tags#languages">languages</a>, <a href="./tags#history">history</a>, <a href="./tags#geopolitics">geopolitics</a>, <a href="./tags#music">music</a>, <a href="./tags#culture">culture</a> and <a href="./tags#sports">sports</a></p>
+    <p class="description"><a href="./tags">All tags</a></p>
+</p>
+
+<ul class="uf-list">
+    {% for post in site.posts %}
+        <li class="post-blurb">
+            <div class="top-line">
+                <a href="{{ post.url }}" class="headline">{{ post.title }}</a>
+                <div class="post-date">{{ post.date | date: "%b %-d, %Y"}}</div>
+            </div>
+        </li>
+
+        {% if post != site.posts.last %}
+            <hr>
+        {% endif %}
+    {% endfor %}
+</ul>

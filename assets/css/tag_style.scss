@@ -7,28 +7,35 @@
     margin-bottom: 4px;
     height: auto;
 
-    a {
+    a.tag {
         display: inline-block;
+    }
+
+    .tag {
+        width: fit-content;
         height: 24px;
-        line-height: 24px;
-        position: relative;
-        margin-left: 12px;
         margin-right: 4px;
-        padding: 0 6px 0 6px;
+        margin-bottom: 4px;
+        padding: 3px 6px 0 6px;
         background: $tag-bg;
         color: $tag-text;
         text-decoration: none;
+        border-radius: 6px;
+    }
+}
+
+.toc {
+    width: fit-content;
+    padding: 10px;
+
+    h2 {
+        margin-top: 0px;
     }
 
-    a:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -12px;
-        width: 0;
-        height: 0;
-        border-color: transparent $tag-bg transparent transparent;
-        border-style: solid;
-        border-width: 12px 12px 12px 0;
-    }
+    border: 1px solid $accent;
+    border-radius: 12px;
+}
+
+.content-elem {
+    width: fit-content;
 }

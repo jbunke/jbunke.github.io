@@ -5,10 +5,15 @@ title: Jordan Bunke - About
 
 <img src="{{ site.baseurl }}/assets/img/portrait.png" alt="Portrait" class="portrait">
 
-<!-- TODO -->
 ### Hello!
 
-Here
+I'm Jordan, a software developer and writer based in London.
+
+I am the creator and sole developer of *Stipple Effect*, a pixel art editor that has the potential to revolutionize 2D indie game development with its approach to scripting. As of writing, *Stipple Effect* has thousands of active users and [over 500 stars on GitHub](https://github.com/jbunke/stipple-effect).
+
+As a software developer, I have primarily worked for myself as a freelancer and an independent software developer. I have worked directly with clients to deliver custom software solutions like terminal programs, games, and desktop applications. I have shipped source-available software with thousands of downloads and purchases and leveraged user feedback to iterate and improve my software.
+
+I feel that now is the right time to accept a software role in which I will be part of a team and exposed to the challenges and growth opportunities that come with it.
 
 ## Experience
 
@@ -23,8 +28,16 @@ Here
 
 #### Technical
 * Functional programming
+* Software engineering design
 * Front-end web development
 * Photoshop
+* Social media marketing
+
+#### Writing
+* Creative writing
+* Formal writing
+* Copywriting
+* Translation/localization
 
 #### Languages
 * **Native**: English, German

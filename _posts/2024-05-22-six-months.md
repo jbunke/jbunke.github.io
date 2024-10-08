@@ -1,10 +1,13 @@
 ---
 title: Why I've spent six months making a pixel art editor from scratch
-tags: ["software", "stipple effect", "pixel art", "game dev"]
+tags: ["software", "stipple-effect", "pixel-art", "game-dev"]
+excerpt_separator: <!-- more -->
 ---
 *Adapted from [the original Reddit post](https://www.reddit.com/r/gamedev/comments/1cy48fo/why_ive_spent_six_months_making_a_pixel_art/)*
 
 Hello everyone! My name is Jordan and I am the developer of [_Stipple Effect_](/projects/stipple-effect), a pixel art editor with animation capabilities that I have been developing on my own for the past six months! I figured now is the right time to share what I've been working on!
+
+<!-- more -->
 
 ## Why?
 

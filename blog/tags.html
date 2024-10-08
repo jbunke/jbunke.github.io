@@ -1,0 +1,37 @@
+---
+title: Jordan Bunke - Blog Posts by Tag
+---
+
+<h1>Tags</h1>
+
+{% assign tags = site.tags | sort %}
+
+<div class="toc">
+    <h2 class="content-elem">Contents</h2>
+    <ul class="content-elem">
+        {% for tag in tags %}
+            <li class="content-elem">
+                <div class="content-elem"><a href="#{{ tag[0] }}">{{ tag[0] }}</a> ({{ tag[1].size }})</div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="tags">
+    {% for tag in tags %}
+        <h3 class="tag" id="{{ tag[0] }}">{{ tag[0] }}</h3>
+        {% for post in tag[1] %}
+            <div class="post-blurb">
+                <div class="top-line">
+                    <a href="{{ post.url }}" class="headline">{{ post.title }}</a>
+                    <div class="post-date">{{ post.date | date: "%b %-d, %Y"}}</div>
+                </div>
+            </div>
+    
+            {% if post != tag[1].last %}
+                <hr>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
+
