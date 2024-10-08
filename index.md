@@ -33,5 +33,3 @@ The best way to contact me is via email or LinkedIn.
 * [Stipple Effect](/projects/stipple-effect)
 * [DeltaScript](/projects/deltascript)
 * [Delta Time](/projects/delta-time)
-
-<!-- TODO -->

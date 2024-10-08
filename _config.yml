@@ -10,7 +10,7 @@
 
 title: Jordan Bunke
 description: >- # this means to ignore newlines until "baseurl:"
-  TODO.
+  Personal website for Jordan Bunke, London-based software developer and writer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jbunke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jbunke
