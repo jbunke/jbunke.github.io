@@ -33,10 +33,11 @@ I feel that now is the right time to accept a software role in which I will be p
 #### Technical
 * Functional programming
 * Software engineering design
-* Front-end web development
+* Front-end web development [**[source code for this website]**](https://github.com/jbunke/jbunke.github.io)
+* Technical writing [**[example]**](/se/api)
 * Social media marketing
 * Graphic design
-* Video editing
+* Video editing [**[example]**](https://www.youtube.com/watch?v=CbTqF8Svi0E)
 
 #### Writing
 * Creative writing
@@ -54,7 +55,7 @@ I feel that now is the right time to accept a software role in which I will be p
 #### Programming languages
 * **Expert**: Java
 * **Proficient**: C#
-* **Competent**: JavaScript, CSS, HTML5
+* **Competent**: JavaScript, CSS, HTML
 * **Prior experience**: C, C++, Haskell, Python
 
 #### Software
