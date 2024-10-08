@@ -3,6 +3,12 @@
     <p class="date">
         <em>{{ page.date | date: "%B %-d, %Y"}}</em>
     </p>
+    <div class="tags">
+        {% for tag in page.tags %}
+            <a href="/tags/{{ tag }}">{{ tag }}</a>
+            <!-- TODO: clickable tags that link to a filtered search for posts of that tag -->
+        {% endfor %}
+    </div>
     
     {{ content }}
 </div>
