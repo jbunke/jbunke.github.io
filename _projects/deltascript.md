@@ -1,12 +1,15 @@
 ---
 title: DeltaScript
-description: "A lightweight scripting language skeleton designed to be easily extended for the specification and implementation of domain-specific languages"
+description: "Lightweight scripting language skeleton designed to be easily extended for the specification and implementation of domain-specific languages"
 gh-link: "https://github.com/jbunke/deltascript"
 status: "In development"
 start-year: 2024
 end-year: 2024
 index: 1
 ---
+
+## Overview
+*DeltaScript* is a concise, statically typed scripting language that is designed to be extended. Its extensions can define new data types, namespaces and functions, but inherit their syntax from *DeltaScript*. Thus, *DeltaScript* extensions form a family of syntactically identical [domain-specific languages](https://en.wikipedia.org/wiki/Domain-specific_language) that share an underlying standard library of primitive types and native functions.
 
 ## Example script
 ```js
@@ -32,7 +35,7 @@ greyscale(~ color c -> color) {
 
 // white(), random_color() match signature of other helpers but ignore parameter
 // uses the hex code color literal #ffffff - white - RGB[255, 255, 255]
-white(~ color c -> color) -> #ffffff;
+white(~ color c -> color) -> #ffffff
 random_color(~ color c -> color) -> rgba(rc(), rc(), rc(), 0xff)
 // uses the hexadecimal integer literal 0x100 = 256
 rc(-> int) -> rand(0, 0x100)
@@ -42,9 +45,6 @@ red(~ color c -> color) -> rgba(c.r, 0, 0, c.a)
 green(~ color c -> color) -> rgba(0, c.g, 0, c.a)
 blue(~ color c -> color) -> rgba(0, 0, c.b, c.a)
 ```
-
-## Overview
-*DeltaScript* is a concise, statically typed scripting language that is designed to be extended. Its extensions can define new data types, namespaces and functions, but inherit their syntax from *DeltaScript*. Thus, *DeltaScript* extensions form a family of syntactically identical [domain-specific languages](https://en.wikipedia.org/wiki/Domain-specific_language) that share an underlying standard library of primitive types and native functions.
 
 ## Development
 * Designed and implemented a skeletal programming language grammar

@@ -1,6 +1,6 @@
 ---
 title: Delta Time
-description: "A general-purpose Java framework used to develop GUI applications and games"
+description: "General-purpose Java framework used to develop GUI applications and games"
 gh-link: "https://github.com/jbunke/delta-time"
 status: "In development"
 start-year: 2022

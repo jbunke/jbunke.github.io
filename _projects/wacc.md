@@ -5,7 +5,7 @@ gh-link: "https://github.com/jbunke/wacc"
 status: "Coursework"
 start-year: 2019
 end-year: 2019
-index: 3
+index: 4
 ---
 
 *This was a group project that I completed with three coursemates. My individual contributions can be assessed by looking at the [project's commit history](https://github.com/jbunke/wacc/graphs/contributors).*

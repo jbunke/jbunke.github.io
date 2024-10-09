@@ -9,9 +9,9 @@ title: Jordan Bunke - About
 
 I'm Jordan, a software developer and writer based in London.
 
-My hobbies and passions include game development, studying and learning languages, history, geography and sports. I especially love football (the real one) and my beloved wife **Bayern Munich** and mistress **Arsenal**.
+My hobbies and passions include game development, studying and learning languages, history, geography and sports. I especially love football (the real one); I am a lifelong **Bayern Munich** fan, and since becoming a Londoner, I have found it impossible to resist the appeal of **The Arsenal**.
 
-I am German and Nigerian, but mostly grew up as a [third culture kid](https://en.wikipedia.org/wiki/Third_culture_kid) in Calgary, Alberta, Canada. This led to a lifelong obsession with culture, identity, language, as well as the deconstruction and analysis of social constructs like race and ethnicity. These themes feature prominently in my writing. 
+I am German and Nigerian, but mostly grew up as a [third culture kid](https://en.wikipedia.org/wiki/Third_culture_kid) in Calgary, Alberta, Canada. This led to an obsession with culture, identity, language, as well as the deconstruction and analysis of social constructs like race and ethnicity, all themes which feature prominently in my writing. 
 
 I am the creator and sole developer of *Stipple Effect*, a pixel art editor that has the potential to revolutionize 2D indie game development with its approach to scripting. As of writing, *Stipple Effect* has thousands of active users and [over 500 stars on GitHub](https://github.com/jbunke/stipple-effect).
 

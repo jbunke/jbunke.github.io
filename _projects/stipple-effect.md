@@ -1,6 +1,6 @@
 ---
 title: Stipple Effect
-description: "A pixel art editor that supports animation and scripting"
+description: "Pixel art editor that supports animation and scripting"
 web-link: "/se"
 gh-link: "https://github.com/jbunke/stipple-effect"
 status: "Maintained"
@@ -81,7 +81,7 @@ On top of that, users can write preview scripts to override the content displaye
 
 ![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
 
-For example, the this GIF showcases a preview script that takes its input from `player-head-textures` and uses the intermediate textures `head` and `head` (projects 2 and 3) to define a lookup texture relationship. The pixels in `player-head-textures` are then mapped onto a spinning head animation sprite sheet and sliced into separate frames for each direction. This array is then returned as the output and shown in the preview window.
+For example, this GIF showcases a preview script that takes its input from `player-head-textures` and uses the intermediate textures `head` and `head` (projects 2 and 3) to define a lookup texture relationship. The pixels in `player-head-textures` are then mapped onto a spinning head animation sprite sheet and sliced into separate frames for each direction. This array is then returned as the output and shown in the preview window.
 
 [*Read more about preview scripts*](/se/docs/preview-scripts)
 
