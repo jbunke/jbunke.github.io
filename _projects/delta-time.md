@@ -8,16 +8,24 @@ end-year: 2024
 index: 2
 ---
 
-<!-- TODO -->
-
 ## Overview
-Here
+*Delta Time* is a lightweight, general-purpose Java framework used to develop GUI applications and games. It consists of a core library that can be extended with optional modules for particular development niches.
+
+*Delta Time* includes utilities for:
+* Text rendering
+* Scripting
+* UI elements
+* Game development paradigms
+* NPC AI
+* Physics
+* File I/O
+* 2D sprite management
+* Debugging
+* Sound
+* ... and much more!
 
 #### Etymology
 The name "Delta Time" is a reference to [the eponymous concept](https://en.wikipedia.org/wiki/Delta_timing) in video game programming and to the [Niger Delta](https://en.wikipedia.org/wiki/Niger_Delta) of southern Nigeria, where the maternal side of my family is from.
-
-## Development
-Here
 
 ## To-Do
 * Develop feature-length games with Delta Time to test its viability

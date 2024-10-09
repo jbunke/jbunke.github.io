@@ -18,14 +18,17 @@ function parseDeltascript() {
             codeWord.setAttribute("class", "namespace");
         else if (next instanceof Element && next.innerHTML.startsWith("("))
             codeWord.setAttribute("class", "ds-function");
-        else if (previous instanceof Element) {
-            if (previous.innerHTML === ".")
-                codeWord.setAttribute("class", "ds-property");
-            else if (previous.innerHTML === "#" && 
-                (codeWord.innerHTML.length == 6 || codeWord.innerHTML.length == 8)) {
-                codeWord.setAttribute("class", "hcl");
-                previous.setAttribute("class", "hcl");
-            }
+        else if (previous instanceof Element && previous.innerHTML === ".")
+            codeWord.setAttribute("class", "ds-property");
+    });
+
+    document.querySelectorAll(".err").forEach(codeWord => {
+        const next = codeWord.nextElementSibling;
+
+        if (codeWord.innerHTML === "#" && next instanceof Element && 
+            (next.innerHTML.length == 6 || next.innerHTML.length == 8)) {
+            codeWord.setAttribute("class", "hcl");
+            next.setAttribute("class", "hcl");
         }
     });
 }

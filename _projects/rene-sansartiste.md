@@ -18,7 +18,7 @@ The algorithm attempts to make several brush strokes per second. Each attempted 
 
 ## Etymology
 
-The name "René Sansartiste" is a pun and an homage.
+The name "René Sansartiste" is a triple entendre.
 
 1. The name René is the French version of the Latin masculine name Renatus, which means "reborn". Cobbling together the meanings of "René sans artiste" in French would result in the phrase "reborn without (an) artist".
 2. "René Sansartiste" is supposed to sound like someone saying "Renaissance artist" in a French accent.
