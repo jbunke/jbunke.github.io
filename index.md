@@ -26,7 +26,7 @@ The best way to contact me is via email or LinkedIn.
 
 {{ post.excerpt }}
 
-[*Read more*]({{ post.url }})
+[*Keep reading*]({{ post.url }})
 
 ## Current projects
 
