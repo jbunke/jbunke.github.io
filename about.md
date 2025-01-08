@@ -13,11 +13,11 @@ My hobbies and passions include game development, studying and learning language
 
 I am German and Nigerian, but mostly grew up as a [third culture kid](https://en.wikipedia.org/wiki/Third_culture_kid) in Calgary, Alberta, Canada. This led to an obsession with culture, identity, language, as well as the deconstruction and analysis of social constructs like race and ethnicity, all themes which feature prominently in my writing. 
 
-I am the creator and sole developer of *Stipple Effect*, a pixel art editor that has the potential to revolutionize 2D indie game development with its approach to scripting. As of writing, *Stipple Effect* has thousands of active users and [over 500 stars on GitHub](https://github.com/jbunke/stipple-effect).
+I am the creator and sole developer of *Stipple Effect*, a pixel art editor that has the potential to revolutionize 2D indie game development with its approach to scripting. As of writing, *Stipple Effect* has thousands of active users and [over 500 stars on GitHub](https://github.com/stipple-effect/stipple-effect).
 
 As a software developer, I have primarily worked for myself as a freelancer and an independent software developer. I have worked directly with clients to deliver custom software solutions like terminal programs, games and desktop applications. I have shipped source-available software with thousands of downloads and purchases, and leveraged user feedback to iterate and improve my software.
 
-I feel that now is the right time to accept a software role in which I will be part of a team and exposed to the challenges and growth opportunities that come with it.
+I feel that now is the right time to accept a software role, through which I will become part of a team and be exposed to the challenges and growth opportunities that such a change brings with it.
 
 ## Experience
 
@@ -34,7 +34,7 @@ I feel that now is the right time to accept a software role in which I will be p
 * Functional programming
 * Software engineering design
 * Front-end web development [**[source code for this website]**](https://github.com/jbunke/jbunke.github.io)
-* Technical writing [**[example]**](/se/api)
+* Technical writing for software [**[1]**](https://github.com/jbunke/deltascript/blob/master/docs/lang-spec.md) [**[2]**](https://stipple-effect.github.io/api)
 * Social media marketing
 * Graphic design
 * Video editing [**[example]**](https://www.youtube.com/watch?v=CbTqF8Svi0E)

@@ -33,7 +33,7 @@ There are three types of scripts in Stipple Effect:
 
 Automation scripts take no parameters and return nothing. They merely execute a series of instructions, usually operating on the project(s) that are active in the program. The scripting API is very feature-rich; almost anything that can be accomplished in the editor can be automated via scripting.
 
-![A preview script in action](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif)
+![A preview script in action](https://raw.githubusercontent.com/stipple-effect/docs/master/assets/graphics/complex-preview.gif)
 
 Preview scripts, like the above example, can be applied to the preview window to modify the preview of the active project. In the above example, the project contents are being mapped onto an animation of the character swiveling in place so that he can be viewed from all angles.
 
