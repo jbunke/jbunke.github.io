@@ -11,7 +11,7 @@ index: 1
 
 ![Making myself](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/runthrough.gif)
 
-*Top Down Sprite Maker* is a flexible and powerful pixel art character creation tool.
+*Top Down Sprite Maker (TDSM)* is a flexible and powerful pixel art character creation tool.
 
 I took a logic-first approach with the code, which resulted in a highly flexible, modular design that can easily be adapted to any style of pixel art sprites with any complexity of composition rules.
 
@@ -25,22 +25,22 @@ I took a logic-first approach with the code, which resulted in a highly flexible
   * **Custom sprite size:** Pad or crop each animation frame at any edge for sprites ranging from 1x1 pixel to 128x128 [**[ screenshot ]**](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/padding.gif)
   * **Sequencing & Inclusion:** Determine the *order of directions and animations in the exported sprite sheet*, as well as which directions and animations to *include* [**[ screenshot ]**](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/sequencing.gif)
   * **Layout:** Determine the axis along which directions and animations are exported in the sprite sheet, as well as how distinct animations follow one another [**[ screenshot ]**](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/layout.gif)
-* **Export formats:** In addition to the standard PNG sprite sheet, *TDSM* optionally exports the sprite sheet's metadata in a JSON file, and the sprite sheet as a [*Stipple Effect*](https://github.com/stipple-effect/stipple-effect) project with the contents of each customization layer on its own layer in the file [**[ screenshot ]**](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/export-formats.gif)
+* **Export formats:** In addition to the standard PNG sprite sheet, *TDSM* optionally exports the sprite sheet's metadata in a JSON file, and the sprite sheet as a *Stipple Effect* project with the contents of each customization layer on its own layer in the file [**[ screenshot ]**](https://raw.githubusercontent.com/jbunke/tdsm-art/refs/heads/master/_tdsm/assets/export-formats.gif)
 
 ## Development
 
 * Designed and implemented a desktop GUI application, only using dependencies that I wrote myself
-* Made all base pixel art assets myself using [*Stipple Effect*](/projects/stipple-effect), my own pixel art editor
+* Made/adapted all base pixel art assets myself using [*Stipple Effect*](/projects/stipple-effect), my own pixel art editor
 
 ## Technologies
 
 #### Java
 
-The source code for *Stipple Effect* is written in Java 17.
+The source code for *TDSM* is written in Java 17.
 
 #### [Delta Time](/projects/delta-time)
 
-*Stipple Effect* is built on top of my *Delta Time* library. *Delta Time* handles actions such as the program execution loop, text rendering, and UI element logic.
+*TDSM* is built on top of my *Delta Time* library. *Delta Time* handles actions such as the program execution loop, text rendering, and UI element logic.
 
 ## More information
 
