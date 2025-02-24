@@ -5,7 +5,7 @@ gh-link: "https://github.com/jbunke/deltascript"
 status: "In development"
 start-year: 2024
 end-year: 2025
-index: 1
+index: 2
 ---
 
 ## Overview
